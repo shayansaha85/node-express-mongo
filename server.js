@@ -30,7 +30,7 @@ app.post("/", (req, res) => {
     res.sendFile(__dirname + "/done.html")
 })
 
-port = 10323
+const port = process.env.PORT || '5000'
 app.listen(port, () => {
     console.log(`Listening to ${port}`)
 })
