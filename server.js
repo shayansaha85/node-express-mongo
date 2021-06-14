@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 
 app.post("/", (req, res) => {
     const loginCred = new entry( {
-        name: req.body.name,
+        name: req.body.nameUser,
         email: req.body.email
     })
 
